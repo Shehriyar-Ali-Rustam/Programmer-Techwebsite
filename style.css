@@ -1,0 +1,516 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #1a1a1a;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #333;
+    border-radius: 5px;
+}
+
+/* About Section */
+.about, .history, .mission, .team, .gallery {
+    text-align: left;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.about p, .history p, .mission p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Team Section */
+.team .team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team .member {
+    text-align: center;
+    margin: 20px;
+}
+
+.team .member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.team .member h3 {
+    margin: 10px 0 5px;
+}
+
+.team .member p {
+    font-style: italic;
+}
+
+/* Gallery Section */
+.gallery .gallery-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery .gallery-images img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery .gallery-images img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+footer a img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .team .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery .gallery-images img {
+        width: 80%;
+    }
+
+    section {
+        padding: 30px 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #1a1a1a;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #333;
+    border-radius: 5px;
+}
+
+/* About Section */
+.about {
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+}
+
+.about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer ul li a i {
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover i {
+    color: #1da1f2; /* Twitter Blue */
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .about {
+        padding: 30px 10px;
+    }
+}
+
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+h1, h2, h3, h4 {
+    color: #1a1a1a;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+nav .icon {
+    display: none;
+}
+
+nav .brandLogo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.navButtons {
+    display: flex;
+}
+
+.navButtons .btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navButtons .btn:hover {
+    background-color: #555;
+}
+
+.navButtons .btn a {
+    color: #fff;
+}
+
+.navButtons .btn a:hover {
+    color: #ddd;
+}
+
+/* Contact Section */
+.contactSection {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contactSection h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.contactSection h4 {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.contactForm {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contactForm input,
+.contactForm textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contactForm button {
+    background-color: #1a1a1a;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.contactForm button:hover {
+    background-color: #333;
+}
+
+#contactMessageSubmision {
+    display: none;
+    color: green;
+    margin-top: 20px;
+}
+
+/* Hero Image */
+.imgCover {
+    background-image: url('baki.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.footerSocial {
+    margin-bottom: 10px;
+}
+
+.footerSocial a {
+    margin: 0 10px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.footerSocial a:hover {
+    color: #1da1f2; /* Twitter Blue */
+}
+
+.footerSocial i {
+    font-size: 24px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav .icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .navButtons {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .navButtons .btn {
+        margin: 5px 0;
+    }
+
+    nav .icon.active + ul {
+        display: flex;
+    }
+}
